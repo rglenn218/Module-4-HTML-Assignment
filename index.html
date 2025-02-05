@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 HTML Assignment</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <!-- HEADER -->
+     <header>
+        <h1>Welcome to CoolShirts&trade;!</h1>
+        <p><em>We take the guesswork out of screen printing t-shirts, hoodies, and other merchandise.</em></p>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <h2>Navigate:</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Us:</h2>
+            <p><em>We offer high-quality screen printed merchandise at budget-friendly prices.</em></p>
+            <p><em>Please reference the table below for pricing info and minimum quantities:</em></p>
+
+            <!-- Pricing Table -->
+            <table border="1">
+                <!-- ***BONUS***: Header Row -->
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Min. Quanity</th>
+                </tr>
+                
+                <!-- T Shirt -->
+                <tr>
+                    <td>T Shirt</td>
+                    <td>$29.99</td>
+                    <td style="text-align: center;">100</td>
+                </tr>
+
+                <!-- Hoodie -->
+                <tr>
+                    <td>Hoodie</td>
+                    <td>$59.99</td>
+                    <td style="text-align: center;">50</td>
+                </tr>
+
+                <!-- Dad Hat -->
+                <tr>
+                    <td>Dad Hat</td>
+                    <td>$14.99</td>
+                    <td style="text-align: center;">200</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Get in Touch:</h2>
+             <p><em>Fill out our contact form below, 
+            and a member of our team will be in touch shortly!</em></p>
+    
+            <!-- Contact Form -->
+            <form action="/submit" method="post" >
+
+                <!-- Personal Information Section -->
+                <fieldset>
+                <legend style="font-size: 125%;"><strong>Your Information</strong></legend>
+
+                    <!-- Name Input -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                    <br> <br>
+
+                    <!-- Email Input -->
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="user-email" 
+                    required placeholder="Enter your email">
+                    <br> <br>
+                    </fieldset>
+
+                <!-- Inquiry Section -->
+                <fieldset>
+                <legend style="font-size: 125%;"><strong>Your Inquiry</strong></legend>
+
+                    <!-- Message Input (Text Area) -->
+                    <label for="inquiry">Message:</label>
+                    <br> <br>
+                    <textarea id="inquiry" name="inquiry" rows="4" 
+                    placeholder="Enter your question here..."></textarea>
+                    <br> <br>
+
+                    <!-- ***BONUS***: Radio Button -->
+                    <label for="seo">How did you hear about us?:</label>
+                    <input type="radio" id="google" name="seo" value="google">Google
+                    <input type="radio" id="instagram" name="seo" value="instagram">Instagram
+                    <input type="radio" id="facebook" name="seo" value="facebook">Facebook
+                    <input type="radio" id="other" name="seo" value="other">Other
+                    <br> <br>
+                </fieldset>
+
+                <br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="SUBMIT" style="font-size: 150%;">
+            </form>
+        </section>
+
+        <br>
+
+        <!-- MEDIA SECTION -->
+        <section id="gallery">
+            <h2>Our Products in Action:</h2>
+            <img src="https://placehold.co/300x200" alt="A placeholder image" width="300" height="200"
+            style="margin-right: 50px;">
+
+            <!-- ***BONUS*** - Rounded Corners Style Attribute -->
+            <img src="https://placehold.co/300x200" alt="A placeholder image" width="300" height="200"
+            style="border-radius: 20px;">
+        </section>
+
+    </main>
+
+</body>
+</html>
